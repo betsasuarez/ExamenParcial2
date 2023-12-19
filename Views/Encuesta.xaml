@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ExamenParcial2.Views.Encuesta"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Encuesta">
+    <StackLayout>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center" />
+        <Entry
+            x:Name="Cuanto es 2 + 2"
+            Placeholder="Ingrese el valor"
+            Text="{Binding Numero1}" />
+        <Entry
+            x:Name="Cual es el valor de PI "
+            Placeholder="Ingrese la respuesta"
+            Text="{Binding Numero2}" />
+        <Entry
+            x:Name="Cunto es 10-5 "
+            Placeholder="Ingrese la respuesta"
+            Text="{Binding Numero2}" />
+
+
+        <Button
+            x:Name="Validar"
+            Command="{Binding SeleccionaSumaCommand}"
+            Text="Sumar" />
+
+
+        <Button
+            x:Name="Grabar"
+            Command="{Binding SeleccionaRestaCommand}"
+            Text="Restar" />
+
+        <Entry
+            x:Name="RespuestaEntry"
+            Placeholder="Su respuesta es..."
+            Text="{Binding Resultado}" />
+
+
+    </StackLayout>
+
+</ContentPage>
