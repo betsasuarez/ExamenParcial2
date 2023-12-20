@@ -54,19 +54,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\EncuestaPage.xaml.cs">
+	    <DependentUpon>EncuestaPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\Encuesta.xaml">
+	  <MauiXaml Update="Views\EncuestaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Service\Interface\" />
 	</ItemGroup>
 
 </Project>
